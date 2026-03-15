@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #1B3A5C;
+  --color-accent: #C8A951;
+  --color-accent-dark: #A8893D;
+  --color-warm: #F5F0E8;
+  --color-gray-light: #F7F8FA;
+  --color-foreground: #1F2937;
+  --color-background: #ffffff;
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

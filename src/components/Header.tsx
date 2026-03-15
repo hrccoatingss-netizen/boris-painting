@@ -66,13 +66,20 @@ export default function Header() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
-          <span className={`font-heading text-2xl tracking-tight transition-colors duration-500 sm:text-3xl ${scrolled ? "text-primary" : "text-white"}`}>
-            Boris<span className="text-accent">.</span>
-          </span>
-          <span className={`ml-1 text-xs font-medium tracking-widest uppercase transition-colors duration-500 ${scrolled ? "text-foreground/40" : "text-white/50"}`}>
-            Painting
-          </span>
+        <Link href="/" className="flex flex-shrink-0 items-center gap-3">
+          <img
+            src="https://img77.uenicdn.com/image/upload/v1574757495/business/d9b662c41304458fa94ed2000b4c9a65.jpg"
+            alt="Boris B. Painting LLC Logo"
+            className="h-10 w-10 rounded-full object-cover shadow-sm sm:h-11 sm:w-11"
+          />
+          <div>
+            <span className={`font-heading text-xl tracking-tight transition-colors duration-500 sm:text-2xl ${scrolled ? "text-primary" : "text-white"}`}>
+              Boris<span className="text-accent">.</span>
+            </span>
+            <span className={`ml-1 text-xs font-medium tracking-widest uppercase transition-colors duration-500 ${scrolled ? "text-foreground/40" : "text-white/50"}`}>
+              Painting
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}

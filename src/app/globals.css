@@ -126,3 +126,75 @@ html {
     radial-gradient(circle at 10% 20%, rgba(200, 151, 62, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 90% 80%, rgba(42, 90, 140, 0.08) 0%, transparent 50%);
 }
+
+/* Hero section with real photo */
+.hero-bg {
+  background-image: linear-gradient(to bottom, rgba(27, 54, 93, 0.75) 0%, rgba(27, 54, 93, 0.85) 60%, rgba(27, 54, 93, 0.95) 100%), url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Service card image overlay */
+.service-card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(27, 54, 93, 0.4) 0%, rgba(27, 54, 93, 0.85) 100%);
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.service-card-overlay:hover::before {
+  background: linear-gradient(180deg, rgba(27, 54, 93, 0.3) 0%, rgba(27, 54, 93, 0.75) 100%);
+}
+
+/* Gallery hover zoom */
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Before/after section */
+.before-after-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.before-after-card img {
+  transition: transform 0.6s ease;
+}
+
+.before-after-card:hover img {
+  transform: scale(1.03);
+}
+
+/* Google review card style */
+.google-review-card {
+  transition: all 0.3s ease;
+}
+
+.google-review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA section with background image */
+.cta-bg {
+  background-image: linear-gradient(135deg, rgba(27, 54, 93, 0.92) 0%, rgba(42, 90, 140, 0.88) 100%), url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}

@@ -197,7 +197,7 @@ export default function Home() {
       {/* ────────── 1. HERO WITH FULL-BLEED IMAGE ────────── */}
       <section className="hero-bg relative flex min-h-screen items-center">
         {/* Extra overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
